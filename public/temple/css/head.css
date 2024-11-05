@@ -1,0 +1,430 @@
+@media screen and (min-width: 750px) {
+    #dynamic-checkout-cart {
+        min-height: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #dynamic-checkout-cart {
+        min-height: 60px;
+    }
+}
+
+:root {
+    --typeHeaderPrimary: "Fjalla One";
+    --typeHeaderFallback: sans-serif;
+    --typeHeaderSize: 40px;
+    --typeHeaderStyle: normal;
+    --typeHeaderWeight: 400;
+    --typeHeaderLineHeight: 1.1;
+    --typeHeaderSpacing: 0.025em;
+
+    --typeBasePrimary: Questrial;
+    --typeBaseFallback: sans-serif;
+    --typeBaseSize: 15px;
+    --typeBaseWeight: 400;
+    --typeBaseStyle: normal;
+    --typeBaseSpacing: 0.0em;
+    --typeBaseLineHeight: 1.3;
+
+
+    --buttonRadius: 0px;
+
+
+    --iconWeight: 5px;
+    --iconLinecaps: miter;
+}
+
+
+.site-nav__thumb-cart {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.hero {
+    background-image: linear-gradient(100deg, #eee5e0 40%, #ffffff 63%, #eee5e0 79%);
+}
+
+.placeholder-content,
+.image-wrap,
+.skrim__link,
+.pswp__img--placeholder {
+    background-image: linear-gradient(100deg, #fdfbfa 40%, #f9f2ef 63%, #fdfbfa 79%);
+}
+
+@font-face {
+    font-family: "Fjalla One";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/temple/fonts/fjallaone_n4.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Questrial;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/temple/fonts/questrial_n4.woff2") format("woff2");
+}
+
+
+
+
+
+
+body,
+input,
+textarea,
+button,
+select {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: calc(var(--typeBaseSize) * 0.85);
+    font-weight: var(--typeBaseWeight);
+    font-style: var(--typeBaseStyle);
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
+}
+
+@media only screen and (min-width: 769px) {
+
+    body,
+    input,
+    textarea,
+    button,
+    select {
+        font-size: var(--typeBaseSize);
+    }
+}
+
+.page-container {
+    display: none;
+}
+
+h1,
+.h1,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.section-header__title,
+.spr-header-title.spr-header-title {
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    font-weight: var(--typeHeaderWeight);
+    font-style: normal;
+    letter-spacing: var(--typeHeaderSpacing);
+    line-height: var(--typeHeaderLineHeight);
+    word-break: break-word;
+
+
+}
+
+h2,
+.h2 {
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-weight: var(--typeBaseWeight);
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
+}
+
+
+@keyframes pulse-fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.splash-screen {
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    background-color: #ffffff;
+}
+
+.splash-screen__loader {
+    max-width: 130px;
+}
+
+@media only screen and (min-width: 769px) {
+    .splash-screen__loader {
+        max-width: 140px;
+    }
+}
+
+.splash-screen img {
+    display: block;
+    max-width: 100%;
+    border: 0 none;
+    animation: pulse-fade 0.4s infinite linear;
+}
+
+.loader-text {
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    animation: pulse-fade 0.4s infinite linear;
+}
+
+.loader-logo {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 6000;
+}
+
+.loader-logo__img {
+    display: block;
+}
+
+.transition-body {
+    opacity: 0;
+}
+
+.btn--loading span:after {
+    content: "Loading";
+}
+
+.carthike-mobile-messenger-active {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+:root {
+    --carthike-button-background-color:
+        #22cd5b;
+    --carthike-button-text-color:
+        #ffffff;
+    --carthike-button-icon-color:
+        #ffffff;
+
+    --carthike-share-button-background-color: #22CD5B;
+    --carthike-share-button-text-color: #FFFFFF;
+    --carthike-share-button-icon-color: #FFFFFF;
+}
+
+;
+
+
+#carthike-chat-wrapper {
+    max-width: 128px;
+}
+
+#carthike-chat-button-container.right {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000000;
+}
+
+#carthike-chat-button-container.left {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 1000000;
+}
+
+
+#carthike-chat-button-container .whatsappbutton {
+
+    border-radius: 6px;
+    background-color: var(--carthike-button-background-color);
+    color: var(--carthike-button-text-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 0
+}
+
+#carthike-chat-button-container .whatsappbutton svg {
+    fill: var(--carthike-button-icon-color);
+}
+
+#carthike-chat-button-container .whatsappbutton svg {
+    width: 14px;
+    margin-left: -0.25rem;
+    margin-right: 0.5rem;
+    height: 14px;
+}
+
+#carthike-chat-button-container .whatsappbutton.buttonWithIcon {
+    border-radius: 50%;
+
+    padding: 12px 12px;
+}
+
+#carthike-chat-button-container .whatsappbutton.buttonWithIcon svg {
+    margin: 0;
+}
+
+
+
+
+#carthike-container .carthike-messenger-frame {
+    z-index: 2147483000 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 20px;
+    height: calc(100% - 20px - 20px);
+    width: 370px;
+    max-height: 590px !important;
+    -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+}
+
+.slide-nav,
+.slide-nav button {
+    font-size: 20px;
+}
+
+
+body {
+
+    padding-bottom: 148px;
+}
+
+.header-item--logo,
+.header-layout--left-center .header-item--logo,
+.header-layout--left-center .header-item--icons {
+    -webkit-box-flex: 0 1 110px;
+    -ms-flex: 0 1 110px;
+    flex: 0 1 110px;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .header-item--logo,
+    .header-layout--left-center .header-item--logo,
+    .header-layout--left-center .header-item--icons {
+        -webkit-box-flex: 0 0 130px;
+        -ms-flex: 0 0 130px;
+        flex: 0 0 130px;
+    }
+}
+
+.site-header__logo a {
+    max-width: 110px;
+}
+
+.is-light .site-header__logo .logo--inverted {
+    max-width: 110px;
+}
+
+@media only screen and (min-width: 769px) {
+    .site-header__logo a {
+        max-width: 130px;
+    }
+
+    .is-light .site-header__logo .logo--inverted {
+        max-width: 130px;
+    }
+
+
+    .site-header--sticky .site-header__logo a {
+        max-width: 97.5px;
+    }
+}
+
+.hero--1558626497917 .hero__title {
+    font-size: 24.0px;
+}
+
+@media only screen and (min-width: 769px) {
+    .hero--1558626497917 .hero__title {
+        font-size: 40px;
+    }
+}
+
+.hero--1558626497917 .btn {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #000 !important;
+
+}
+
+.hero-natural--1626419369008643ad {
+    height: 0;
+    padding-bottom: 56%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-natural--1626419369008643ad {
+        padding-bottom: 116%;
+    }
+}
+
+.slideshow__slide--1626419369008643ad-0 .hero__title {
+    font-size: 48.0px;
+}
+
+.hero__image--1626419369008643ad-0 {
+    object-position: center center;
+}
+
+@media only screen and (min-width: 769px) {
+    .slideshow__slide--1626419369008643ad-0 .hero__title {
+        font-size: 80px;
+    }
+}
+
+.slideshow__slide--1626419369008643ad-0 .btn {
+    background: #ffffff !important;
+    border: none;
+    color: #000 !important;
+
+}
+
+.map-16266595851338d85d {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/temple/imgs/land/business-dog-paws-on-keyboard_1800x.jpg?v=1626843511");
+    background-position: bottom center;
+}
+
+@media only screen and (max-width: 750px) {
+    .map-16266595851338d85d {
+        padding-top: 66.650390625%;
+    }
+}
+
+.product-slider.slick-initialized[data-id="6894180728919"]:after {
+    animation-duration: 6750ms;
+  }

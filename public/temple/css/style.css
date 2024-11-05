@@ -1,0 +1,11 @@
+.product__photos{
+    position: relative;padding-left: 65px !important;
+}
+
+.overflow-scroller .grid__item{
+    width: 100%;
+}
+
+.slick-slide .grid-product__meta{
+    text-align: center;
+}

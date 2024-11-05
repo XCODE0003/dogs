@@ -1,0 +1,55 @@
+.sp-image {
+    width: 100%;
+    height: 100%;
+    outline: 0;
+}
+
+#example5 .sp-thumbnail-image-container{
+	width: 52px;
+    height: 52px;
+    border-radius: 12px;    background: #F2F2F2;
+}
+
+.sp-left-thumbnails.sp-has-pointer .sp-thumbnail{
+	right: 0;
+}
+
+.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:before, 
+.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:after,
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after,
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:before{
+	display: none;
+}
+
+.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail .sp-thumbnail-image-container,
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail .sp-thumbnail-image-container{
+	border: 1px solid #000000;
+}
+
+.sp-left-thumbnails .sp-thumbnail-container, .sp-right-thumbnails .sp-thumbnail-container{
+	margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.slider-pro{
+	margin: 0;    padding-left: 65px !important;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-thumbnail{
+	top: 0
+}
+
+.sp-top-thumbnails .sp-thumbnail-container, .sp-bottom-thumbnails .sp-thumbnail-container{
+	margin-right: 8px;
+}
+
+
+@media (max-width: 800px) {
+	.slider-pro{
+		margin: 0;    padding-left: 0px !important;
+	}
+
+	.sp-bottom-thumbnails.sp-has-pointer {
+		margin-top: 15px;
+	}
+}

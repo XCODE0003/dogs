@@ -1,0 +1,40 @@
+.slick-arrow{
+    z-index: 1;
+}
+
+.slick-prev
+{
+    left: 15px;
+}
+
+.slick-track{
+    padding: 0;
+}
+
+.slick-next 
+{
+    right: 15px;
+}
+
+.slick-next:before
+{
+    content: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+}
+
+.slick-slide img{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slick-prev:before{
+    content: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slick-prev:before, .slick-next:before{
+    background: none;
+}
+
+.slick-arrow{
+    box-shadow: none;
+    background: transparent;
+}
